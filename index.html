@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+#main{
+    height: 100%;
+    width: 100%;
+   /* background-color: skyblue;*/
+}
+#logo{
+     margin-top:8px ;
+    margin-left: 10%;
+}
+#logo img{
+    height:50px;
+}
+#nav-bar{
+    display: flex;
+font-size: 25px;
+gap: 50px;
+margin-right:15%;
+text-decoration: none;
+}
+/* give color  height weidth to nav bar */
+header{
+    width: 100%;
+    height: 9%;
+    background-color:rgba(0, 0, 0, 0.938);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   position:fixed;
+
+}
+header nav a{
+    color: white;
+text-decoration: none;
+padding: 10px 15px;
+}
+
+nav a:hover{
+    border-bottom: 3px solid rgb(120, 198, 243);
+border-bottom-left-radius: 20%;
+border-bottom-right-radius: 20%;
+padding-bottom: 6px;
+}
+/* -------------------------Section 1 start--------------------------------------------*/
+section{
+    width: 100%;
+    height: 100vh;
+
+}
+/* sbkuch section ke beech me laaane ke liye */
+.sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('bgsec1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   
+}
+/* section1 paragraph postion ko centre krne ke liye */
+.LR{
+    font-family: 'Protest Riot', sans-serif;
+    height: 60%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+/* for set and edit Welcome text */
+ .p1{
+    position: relative;
+    color:rgb(247, 247, 247);
+    font-size: 50px;
+    margin-top:40px ;
+    margin-left: 56px;
+}
+/* for set one cup tea text*/
+  #cup{
+     position: relative;
+    color: white;
+    font-size:50px ;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#cup span{
+    color:rgb(245, 226, 142);
+}
+/*Cafe text */
+#cafe{
+position: relative;
+font-size: 50px;
+color: white;
+margin-left: 108px;
+margin-top:1px;
+}
+/* section1 buttons*/
+.btn{
+    margin-top:6px;
+    margin-left: 70px;  
+}
+.btn2{
+    font-size: 20px;
+    margin-top: 6px;
+    margin-left:5px;
+    padding: 5px 10px;
+    background-color:rgba(0, 0, 0, 0.836);
+    color: white;
+    border-radius: 6px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+/* ----------------------------------Section 2 start----------------------------------------- */
+.sec2{
+    background-image: url('lgb.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+
+}
+/* form box ,sizing,bg color */
+form{
+    font-family: 'Protest Riot', sans-serif;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #00000094;
+    border: 2px solid rgb(0, 0, 0);
+    height: 60%;
+    width: 20%;
+    padding: 5px;
+}
+::placeholder{
+    color: rgb(60, 122, 255);
+}
+/* common cLASS 4 INPUT BOX to size and margin */
+.f1{
+    position: relative;
+    cursor: pointer;
+    margin-left: 45px;
+    margin-top:8px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black ;
+    background-color: #d6b1b1;
+}
+/* top hading signup */
+#fh{
+    font-family: 'Protest Riot', sans-serif;
+    margin-left:57px;
+    font-size: 35px;
+    margin-top:3px;
+    color: burlywood;
+    cursor: pointer;
+}
+/* radio button  */
+#ra1{
+    margin-top: 2px;
+    margin-left:59px; 
+    font-size: 15px;
+}
+/* radio buton color */
+.ds{
+    color:white ;
+    padding: 10px;
+    cursor: pointer;
+}
+/* button1 to give margin for center both button */
+#btn1{
+    position: relative;
+    margin-left: 70px;
+}
+/*common class to butoon editing like size color */
+.btn1{
+        position: relative;
+        font-size:12px;
+        margin-top: 10px;
+        margin-left:10px;
+        padding: 5px 10px;
+        background-color:rgba(32, 6, 6, 0.836);
+        color: white;
+        border-radius: 6px;
+        border: 2px solid white;
+        cursor: pointer;   
+}
+/* give gap between buttons*/
+#btn2{
+    margin-left: 5px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+/* Section 3 start*/
+.sec3{
+    background-image: url('menue.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer ;
+}
+/* comon class for create left and right box of veg non veg */
+.main3{
+    margin-top: 20px;
+    height: 450px;
+    width: 500px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+.main3 :hover{
+    background-color: rgba(0, 0, 0, 0.938);
+}
+/* for give gap between both veg and non veg*/
+#left-main3{
+    margin-right: 90px;
+
+}
+/* edit vegetarian heading of left*/
+.veg{
+    font-size: 25px;
+    font-family: 'Protest Riot', sans-serif;
+    color: white;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.mainsnacks{
+    display: flex;
+}
+/* snack list of veg*/
+.snacks{
+    width: 150px;
+    padding: 10px;
+    margin-left: 53px;
+    margin-top: 8px;
+    color: azure;
+   /* background-color: rgb(67, 54, 180);*/
+}
+ul{
+    font-family: 'Protest Riot', sans-serif;
+}
+li{
+    color:#d6b1b1;
+    margin-top: 1px;
+    font-style: italic;
+}
+/*Snack heading */
+#snackhead{
+font-size: 27px;
+color: blanchedalmond;
+}
+/*List items of snacks */
+.sl{
+    font-size: 20px;
+     
+}
+.lb{
+    margin-top: 20px;
+}
+
+/* give gap between left and right*/
+#right-main3{
+    margin-left: 90px;
+}
+/*----------------------------section 4 start-------------------------------*/
+.sec4{
+    background-image: url(bgsec1.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    
+}
+/* contact page height set and all background properties */
+.con{
+    width: 60vw;
+    height: 60vh;
+    background-color: rgba(6, 24, 59, 0.212);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 80px rgb(236, 4, 198);
+    border-radius: 20px;
+    border-bottom: 2px solid rgb(90,160,209);
+    margin:auto;
+    margin-top: 6%;
+}
+.con:hover{
+    box-shadow: 0px 0px 80px rgb(93, 4, 236);
+    transform: translateY(-30px);
+    transition: transform 0.5s ;
+    background-color:rgba(222, 184, 135, 0.349);
+    
+    border-bottom: 4px solid rgba(209, 13, 209, 0.911);
+
+}
+.con h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 15px 0px;
+    border-bottom-left-radius: 23%;
+    border-bottom-right-radius: 23%;
+    border-bottom: 2px solid rgb(90,160,209);  
+}
+.con h4 span{
+    color:rgb(90,160,209) ;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+.images img{
+    width: 6vw;
+    cursor: pointer;
+
+}
+.images img:hover{
+    transform: translateY(-22px);
+    transition:transform o.5s ;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+<header>
+<div id="logo"><img src="1cuptea.jpg"></div>
+<nav id="nav-bar">
+    <a href="#Home">Home</a>
+    <a href="#Sigin">Sigin</a>
+    <a href="#Menue">Menue</a>
+    <a href="#Contact">Contact us</a>
+    
+</nav>
+</header>
+<section class="sec1" id="Home">
+     <div class=" LR">
+        <p class="p1">Welcome To </p>
+        <p id="cup">ONE <span>CUP TEA</span></p>
+        <p id="cafe" >CAFE</p>
+        <div class="btn ">
+            <button class="btn2">Login</button>
+            <button class="btn2">Details</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="sec2" id="Sigin">
+    <form>
+        <h2 id="fh" class="">Sigin Form</h2>
+        <input type="text" placeholder="Full Name"  class="f1"><br><br>
+        <input type="number" placeholder="Phone Number" class="f1"><br><br>
+        <input type="email" placeholder="Email" class="f1"><br><br>
+        <input type="password" placeholder="Password" maxlength="8" class="f1"><br><br>
+        <input type="radio"id="ra1" > <span class="ds"> Male </span>
+        <input type="radio" > <span class="ds"  > Female </span>
+        <div id="lfb " class="">
+            <button class="btn1" id="btn1" >Submit</button>
+            <button class="btn1" id="btn2">Reset</button>
+        </div>
+    </form>
+    </Section>
+
+    
+    <section class="sec3" id="Menue">
+    <div class="main3" id="left-main3">
+        <p class="veg"> *Starter/Breakfast*</p>
+        <div class="mainsnacks">
+            <div class="snacks" >
+            <ul id="snackhead" type="square"> Snacks
+                <li class="sl">Samosa</li>
+                <li class="sl">Bread Pakoda</li>
+                <li class="sl">French Fries</li>
+                <li class="sl">Pnner Pakoda</li>
+                <li class="sl">Raj Kachori</li>
+            </ul>
+        </div>
+        <div class="snacks"  >
+            <ul id="snackhead" type="square"> Drinks
+                <li class="sl">Cold Drink</li>
+                <li class="sl">Cold Coffe</li>
+                <li class="sl">Hot Coffe</li>
+                <li class="sl">Juice</li>
+                <li class="sl">Soup</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="mainsnacks lb">
+        <div class="snacks" >
+        <ul id="snackhead" type="square"> South Indian
+            <li class="sl">Dosa</li>
+            <li class="sl">Burger</li>
+            <li class="sl">Chowmin</li>
+            <li class="sl">Chilli Potato</li>
+            <li class="sl">Pav Bhaji</li>
+        </ul>
+    </div>
+    <div class="snacks"  >
+        <ul id="snackhead" type="square"> Ice Creame
+            <li class="sl">Choclate</li>
+            <li class="sl">Pine apple</li>
+            <li class="sl">Rasmlaayi</li>
+            <li class="sl">Strawberry</li>
+            <li class="sl">Cookie dough </li>
+        </ul>
+    </div>
+</div>
+    </div>
+
+    <div class="main3" id="right-main3">
+        <p class="veg"> *Lunch / Dinner*</p>
+        <div class="mainsnacks">
+            <div class="snacks" >
+            <ul id="snackhead" type="square"> Salid
+                <li class="sl">Tomato</li>
+                <li class="sl">Onnion</li>
+                <li class="sl">Cucumber</li>
+                <li class="sl">Raddis</li>
+                <li class="sl">Lemon</li>
+            </ul>
+        </div>
+        <div class="snacks"  >
+            <ul id="snackhead" type="square">Sabji
+                <li class="sl">Daal Makhhni</li>
+                <li class="sl">Matar Panner</li>
+                <li class="sl">Kadhaayi Paner</li>
+                <li class="sl">Raayta</li>
+                <li class="sl">Chhole</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="mainsnacks lb">
+        <div class="snacks" >
+        <ul id="snackhead" type="square">Roti/Rice
+            <li class="sl">Plane Roti</li>
+            <li class="sl">Naan</li>
+            <li class="sl">Tandoori Roti</li>
+            <li class="sl">Plane Rice</li>
+            <li class="sl">Pulaaw</li>
+        </ul>
+    </div>
+    <div class="snacks"  >
+        <ul id="snackhead" type="square">Sweets
+            <li class="sl">Gulaab Jaamun</li>
+            <li class="sl">Strawbeery</li>
+            <li class="sl">Ras Mlai</li>
+            <li class="sl">Burfy</li>
+            <li class="sl">Imarti</li>
+        </ul>
+    </div>
+</div>
+    </div>
+</section>
+<section class="sec4" id="Contact">
+    <h4><p>.</p></h4>
+    <div class="con">
+        <h4>Contact Us <span>Directly</span></h4>
+        <div class="images">
+            <img src="insta.png" alt="Instagram">
+            <img src="fb.png" alt="Facebook">
+            <img src="twi.png" alt="Twitter">
+            <img src="li.png" alt="Linkedin">
+        </div>
+    </div>
+</section>
+    </div>
+</body>
+</html>
